@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2017, 10:16:18 AM
+    Author     : waiya
+*/
+
+body {
+    margin:0;
+    background-image: url('../image/militaryBackground.png');
+    background-size: cover;
+    font-family: Open Sans;
+    font-size: 35px;
+    color: #222;
+}
+.boxes{
+    display:block;
+    width:100%;
+    height:100vw;
+    text-align: center;
+}
+label {
+    
+    perspective: 1000px;   
+    transform-style: preserve-3d;
+    display: inline-block;
+    width: 360px;
+    height: 265px;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+    z-index: 20;
+}
+.card div.front1{
+    background-image: url('../image/marine.jpg');/* need to change into background image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card div.front2{
+    background-image: url('../image/Army.jpg');/* need to change into background image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card div.front3{
+    background-image: url('../image/Navy.jpg');/* need to change into background image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card div.front4{
+    background-image: url('../image/airforce.png');/* need to change into background image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.card div.front5{
+    background-image: url('../image/coast.jpg');/* need to change into background image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card div.front6{
+    background-image: url('../image/nationalguard.jpg');/* need to change into background image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+       
+        text-align: center;
+        line-height: 200px;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .back {
+        background: #222;
+        color: #FFF;
+        transform: rotateX(180deg);
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+body header{
+    background:rgb(0, 0, 0);
+    display:flex;
+}
+header a{
+    font-size: 18px;
+    text-align: center;
+    color:white;
+    flex:1;
+    text-decoration: none;
+    padding:10px 16px; 
+}
+
+.nav a:hover{
+   background: rgba(211, 211, 211, 0.62);
+   cursor:pointer;
+}
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 610px) {
+    .video{
+        width:100%;
+        height:50vw;
+    }
+    .img{
+        padding-top: 0;
+        background-position: bottom;
+        background-size: cover;
+        width:100%;
+        height:65vw;
+    }
+  .nav a:not(:first-child) {
+      display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .nav.responsive {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+}
