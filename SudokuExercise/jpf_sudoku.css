@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 6
+   Case Problem 2
+
+   Sudoku Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         jpf_sudoku.css
+
+*/
+
+/*table{
+    display: table;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 90%;      
+}
+td{
+    border: 5px outset grey;
+    width:33.3%;
+}
+th{
+    color: grey;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}*/
+
+ section p{
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+tbody>tr>td {
+    width: auto;
+    border: 3px solid #000000;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 15px #000000 inset;
+    height: 40px !important;
+}
+
+thead>tr>td {
+    padding: 0.5rem;
+}
+
+.index {
+    width: 10%;
+    display: inline-block;
+}
+
+.main {
+    width: 80%;
+    display: inline-block
+}
+
+.index table {
+    width: 100%;
+}
+
+.main table {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.main table>thead {
+    border: none;
+}
+
+.index tbody>tr>td {
+    border: 0px solid;
+    text-align: right;
+    padding: 0.5rem;
+    border: 5px solid white;
+    box-shadow: none;
+}
+
+.greenBox {
+    background-color: rgb(203,229,130);
+}
+
+.goldBox {
+    background-color: rgb(228, 199, 42);
+}
+
