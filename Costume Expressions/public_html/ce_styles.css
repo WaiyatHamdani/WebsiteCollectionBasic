@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 6, 2018, 3:35:01 PM
+    Author     : aseelfawalha
+*/
+html{
+    background-color: rgb(101,101,101);
+}
+
+body {
+    
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Arial, sans-serif; 
+    width: 95%;
+}
+div.cell a{
+    display: table;
+    width: 100%;
+    padding-left: 8px;
+    padding-bottom: 8px;
+ 
+}
+
+
+header {
+    background-color: rgb(191,68,70);
+    height: 40px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+   
+}
+
+nav ul li:hover{ /* hover function to make it black*/
+    background-color: rgb(255,211,211);
+}
+
+nav li a {
+    font-size: 0.9em;
+    color: rgb(255,211,211);
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 15px;
+    
+}
+footer {
+    text-align: right;
+    
+    float: right;
+    font-size:1.8vmin;
+    color: rgb(143,33,36);
+    margin-top: -70px;
+    padding: 10px 20px
+}

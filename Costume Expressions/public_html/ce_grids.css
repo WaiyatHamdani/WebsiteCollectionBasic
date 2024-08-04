@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 6, 2018, 3:35:55 PM
+    Author     : aseelfawalha
+*/
+
+
+
+div#container {
+    display: inline-table;
+    width: 100%;
+     padding-right: 9px;
+    padding-bottom: 8px;
+    
+}
+
+div.column{
+    clear:both;
+}
+.container, .row ,div[class^="column"], .cell a{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.row {
+    width: 100%;
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^='column'] {
+    float: left;
+}
+
+div.column100 {
+    width: 100%;
+}
+
+div.column100 img {
+    width: 100%;
+}
+
+div.column50 {
+    width: 50%;
+}
+
+div.column33 {
+    width: 33%;
+}
+
+div.column67 {
+    width: 67%;
+}
+
+div.column25 {
+    width: 25%;
+}
+
+div.column75 {
+    width: 75%;
+}
+
+div.column19 {
+    width: 19%;
+}
+
+div.column60{
+    width:60%;
+}
+div.column40 {
+    width: 40%;
+}
+
+div.column80 {
+    width: 80%;
+}
+
+div.column80 img {
+    width: 100%
+}
+
