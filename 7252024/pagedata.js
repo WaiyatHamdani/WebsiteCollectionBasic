@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Example data
     const userData = {
-        username: 'brandon',
+        username: 'enock',
         followers: 10000,
         following: 30
     };
+    
 
     // Set the data to the HTML elements
     document.getElementById('username').textContent = userData.username;
