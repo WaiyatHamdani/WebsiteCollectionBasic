@@ -1,0 +1,134 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 24, 2018, 1:52:03 PM
+    Author     : waiya
+*/
+
+.nav {
+  overflow: hidden;
+  background-color: rgb(210, 24, 24);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.nav a:hover {
+  background-color:rgba(211, 211, 211, 0.62);
+  color: rgb(0, 0, 0);
+}
+
+.nav .icon {
+  display: none;
+}
+
+#skill {
+   background:white;
+   width: 15%;
+   float: left;
+   padding-bottom: 30px;
+}
+
+#skill h1 {
+   width: 85%;
+   padding-left: 15%;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: #5f64a0;
+   color: white;
+   line-height: 200%;
+   margin-bottom: 20px;
+}
+
+
+#skill li {
+   line-height: 2em;
+   margin-left: 15%;
+}
+
+#skill li a {
+   color: black;
+   font-size: 14px;
+}
+
+#main {
+   width: 70%;
+   margin-left: 2%;
+   float: right;
+   padding-right: 10%;
+   padding-bottom: 20px;
+}
+#main ul li {
+   font-size: 16px;
+   margin: 20px 0px 0px 0px;
+}
+#main h1 {
+   font-size: 18px;
+   color: rgb(101, 101, 101);
+   background: #b1ecbe;
+   letter-spacing: 3px;
+   text-decoration: underline;
+   margin: 20px 0px 0px 0px;
+}
+header{
+  background-color: #5f64a0;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+  header img{
+   height:40vw;
+   width:100%;
+}
+
+@media screen and (max-width: 610px) {
+
+    #skill {
+     width:100%;
+  }
+
+  #skill h1 {
+     font-size:25px;
+     color:white;
+     background-color: red;
+  }
+
+
+
+  #skill a {
+    width:100%;
+    text-align: center;
+    color: black;
+    height:50px;
+
+  }
+
+  header img{
+   height:40vw;
+   width:100%;
+}
+#main {
+   width: 70%;
+   margin-left: 2%;
+   float: left;
+   padding-bottom: 20px;
+}
+#main h1{
+    background-color: aqua;
+}
+}

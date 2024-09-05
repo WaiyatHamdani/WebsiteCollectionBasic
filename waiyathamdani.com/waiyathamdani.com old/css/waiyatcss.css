@@ -1,0 +1,101 @@
+html{
+    background: #76e4e070;
+
+}
+body{
+    background: white;
+}
+.center{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    text-decoration: underline;
+}
+header{
+background:rgb(0, 0, 0);
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+}
+.nav a:hover {
+background:rgba(211, 211, 211, 0.62);
+cursor: pointer;
+}
+footer{
+    background: #d19e51a8;
+    text-align: center;
+}
+body header a{
+color:#3679da;
+text-decoration: none;
+-webkit-box-flex:1;
+-ms-flex:1;
+
+padding:10px 16px;
+text-align: center;
+}
+
+.nav .icon {
+display: none;
+}
+
+.img{
+    background-image: url('../image/meimg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 45vw;
+}
+html body section div h1{
+/*    margin:0;
+    padding-top: 95px;
+    text-align:center;
+    color:white;
+    font-size:50px;*/
+margin:0;
+color:rgb(0, 0, 0);
+position:relative;
+top:45%;
+text-align: center;
+font-size: 30px;
+text-shadow:.85vw .95vh 20px white; /*text shadow*/
+}
+.collum{
+  display: flex;
+  background-color: DodgerBlue;
+}
+.row:hover{
+  background-color: gray;
+}
+.row{
+  text-decoration: none;
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+  font-size: 20px;
+}
+.collum a{
+  text-decoration: none;
+}
+@media screen and (max-width:500px) {
+  .collum{
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+  }
+  .row{
+    text-decoration: none;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  body header a{
+    text-decoration: none;
+    flex: :1;
+    text-align: center;
+    padding: 10px 6px 18px 5px;
+  }
+}
