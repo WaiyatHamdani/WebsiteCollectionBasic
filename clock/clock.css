@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(195, 223, 223);
+}
+
+.text-center{
+    text-align: center;
+}
+.clockbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 39%;
+    height: 65%;
+    background-color: #171A1D;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0,0,0,.15), 0 2px 2px rgba(0,0,0,.2);
+}
+
+.clockbase {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #eee;
+}
+
+.timeindicator {
+    position: absolute;
+    z-index: 1;
+    top: 6%; /* Adjusted */
+    left: 14%; /* Adjusted */
+    width: 70%; /* Adjusted */
+    height: 70%; /* Adjusted */
+}
+
+.timeindicator div {
+    position: absolute;
+    width: 1%; /* Adjusted */
+    height: 1%; /* Adjusted */
+    margin: 280px 280px; /* Adjusted */
+    background-color: rgb(126, 124, 124);
+}
+
+/* Adjust indicator positioning */
+.timeindicator div:nth-child(1) {
+    transform: rotate(30deg) translateY(-280px);
+}
+.timeindicator div:nth-child(2) {
+    transform: rotate(60deg) translateY(-280px);
+}
+.timeindicator div:nth-child(3) {
+    transform: rotate(90deg) translateY(-280px);
+    background-color: red;
+}
+.timeindicator div:nth-child(4) {
+    transform: rotate(120deg) translateY(-280px);
+}
+.timeindicator div:nth-child(5) {
+    transform: rotate(150deg) translateY(-280px);
+}
+.timeindicator div:nth-child(6) {
+    transform: rotate(180deg) translateY(-280px);
+    background-color: red;
+}
+.timeindicator div:nth-child(7) {
+    transform: rotate(210deg) translateY(-280px);
+}
+.timeindicator div:nth-child(8) {
+    transform: rotate(240deg) translateY(-280px);
+}
+.timeindicator div:nth-child(9) {
+    transform: rotate(270deg) translateY(-280px);
+    background-color: red;
+}
+.timeindicator div:nth-child(10) {
+    transform: rotate(300deg) translateY(-280px);
+}
+.timeindicator div:nth-child(11) {
+    transform: rotate(330deg) translateY(-280px);
+}
+.timeindicator div:nth-child(12) {
+    transform: rotate(360deg) translateY(-280px);
+    background-color: red;
+}
+
+/* Adjust clock hands */
+.clockhour {
+    position: absolute;
+    z-index: 2;
+    top: 28%; /* Adjusted */
+    left: 50%; /* Adjusted */
+    width: 8px; /* Adjusted */
+    height: 165px; /* Adjusted */
+    background-color: #555;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    transform-origin: 4px 120px; /* Adjusted */
+    animation: rotate-hour 43200s linear infinite;
+}
+
+.clockminute {
+    position: absolute;
+    z-index: 3;
+    top: 21%; /* Adjusted */
+    left: 50%; /* Adjusted */
+    width: 8px; /* Adjusted */
+    height: 220px; /* Adjusted */
+    background-color: #555;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    transform-origin: 4px 180px; /* Adjusted */
+    animation: rotate-minute 3600s linear infinite;
+}
+
+.clocksecond {
+    position: absolute;
+    z-index: 4;
+    top: 12%; /* Adjusted */
+    left: 51%; /* Adjusted */
+    width: 4px; /* Adjusted */
+    height: 280px; /* Adjusted */
+    background-color: red;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    transform-origin: 2px 240px; /* Adjusted */
+    animation: rotate-second 60s linear infinite;
+}
+
+.clocksecond:after {
+    position: absolute;
+    left: -5px;
+    bottom: 56px; /* Adjusted */
+    width: 32px; /* Adjusted */
+    height: 32px; /* Adjusted */
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+
+.clockcenter {
+    position: absolute;
+    z-index: 1;
+    width: 45%;
+    height: 45%;
+    top: 28%;
+    left: 29%;
+    background-color: #b5d4e6;
+    border-radius: 50%;
+    box-shadow: inset 0 -1px 0 #fafafa, inset 0 1px 0 #e3e3e3;
+}
+
+.clockcenter:after {
+    display: block;
+    top: 50%;
+    width: 23%;
+    height: 23%;
+    margin: 39%;
+    background-color: #ddd;
+    border-radius: 50%;
+}
