@@ -6,9 +6,6 @@ Waiyat Schedule
 
 
 
-bored and designed example
-![design1](img/2.jpg)
-
 college exercise example
 ![schooll exercise](img/1.jpg)
 
