@@ -3,7 +3,8 @@
         var now = new Date();
         
         // Calculate degrees
-        var hourDeg = (now.getHours() % 12) / 12 * 360 + now.getMinutes() / 60 * 30;
+        //var hourDeg = (now.getHours() % 12) / 12 * 360 + now.getMinutes() / 60 * 30;
+        var hourDeg = (now.getHours()) / 24 * 360 + now.getMinutes() / 60 * 15; // im going to make it 24 hour instead
         var minuteDeg = now.getMinutes() / 60 * 360 + now.getSeconds() / 60 * 6;
         var secondDeg = now.getSeconds() / 60 * 360;
 

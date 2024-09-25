@@ -5,136 +5,169 @@ html, body {
     background-color: rgb(195, 223, 223);
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
+
 .clockbox {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 39%;
     height: 65%;
-    background-color: #171A1D;
     border-radius: 50%;
-    box-shadow: 0 10px 15px rgba(0,0,0,.15), 0 2px 2px rgba(0,0,0,.2);
 }
 
 .clockbase {
+    position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #eee;
+    
     border-radius: 50%;
-    box-shadow: 0 0 5px #eee;
 }
 
 .timeindicator {
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: 6%; /* Adjusted */
-    left: 14%; /* Adjusted */
-    width: 70%; /* Adjusted */
-    height: 70%; /* Adjusted */
+    width: 70%;
+    height: auto;
 }
 
 .timeindicator div {
-    position: absolute;
-    width: 1%; /* Adjusted */
-    height: 1%; /* Adjusted */
-    margin: 280px 280px; /* Adjusted */
+    position: fixed;
+    width: 1%;
+    height: 1%;
+    margin: 280px 280px;
     background-color: rgb(126, 124, 124);
 }
 
-/* Adjust indicator positioning */
+/* Position the 24-hour indicators, 15 degrees apart */
 .timeindicator div:nth-child(1) {
-    transform: rotate(30deg) translateY(-280px);
+    transform: rotate(15deg) translateY(-280px);
 }
 .timeindicator div:nth-child(2) {
-    transform: rotate(60deg) translateY(-280px);
+    transform: rotate(30deg) translateY(-280px);
 }
 .timeindicator div:nth-child(3) {
+    transform: rotate(45deg) translateY(-280px);
+}
+.timeindicator div:nth-child(4) {
+    transform: rotate(60deg) translateY(-280px);
+}
+.timeindicator div:nth-child(5) {
+    transform: rotate(75deg) translateY(-280px);
+}
+.timeindicator div:nth-child(6) {
     transform: rotate(90deg) translateY(-280px);
     background-color: red;
 }
-.timeindicator div:nth-child(4) {
+.timeindicator div:nth-child(7) {
+    transform: rotate(105deg) translateY(-280px);
+}
+.timeindicator div:nth-child(8) {
     transform: rotate(120deg) translateY(-280px);
 }
-.timeindicator div:nth-child(5) {
+.timeindicator div:nth-child(9) {
+    transform: rotate(135deg) translateY(-280px);
+}
+.timeindicator div:nth-child(10) {
     transform: rotate(150deg) translateY(-280px);
 }
-.timeindicator div:nth-child(6) {
+.timeindicator div:nth-child(11) {
+    transform: rotate(165deg) translateY(-280px);
+}
+.timeindicator div:nth-child(12) {
     transform: rotate(180deg) translateY(-280px);
     background-color: red;
 }
-.timeindicator div:nth-child(7) {
+.timeindicator div:nth-child(13) {
+    transform: rotate(195deg) translateY(-280px);
+}
+.timeindicator div:nth-child(14) {
     transform: rotate(210deg) translateY(-280px);
 }
-.timeindicator div:nth-child(8) {
+.timeindicator div:nth-child(15) {
+    transform: rotate(225deg) translateY(-280px);
+}
+.timeindicator div:nth-child(16) {
     transform: rotate(240deg) translateY(-280px);
 }
-.timeindicator div:nth-child(9) {
+.timeindicator div:nth-child(17) {
+    transform: rotate(255deg) translateY(-280px);
+}
+.timeindicator div:nth-child(18) {
     transform: rotate(270deg) translateY(-280px);
     background-color: red;
 }
-.timeindicator div:nth-child(10) {
+.timeindicator div:nth-child(19) {
+    transform: rotate(285deg) translateY(-280px);
+}
+.timeindicator div:nth-child(20) {
     transform: rotate(300deg) translateY(-280px);
 }
-.timeindicator div:nth-child(11) {
+.timeindicator div:nth-child(21) {
+    transform: rotate(315deg) translateY(-280px);
+}
+.timeindicator div:nth-child(22) {
     transform: rotate(330deg) translateY(-280px);
 }
-.timeindicator div:nth-child(12) {
+.timeindicator div:nth-child(23) {
+    transform: rotate(345deg) translateY(-280px);
+}
+.timeindicator div:nth-child(24) {
     transform: rotate(360deg) translateY(-280px);
     background-color: red;
 }
 
 /* Adjust clock hands */
 .clockhour {
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    top: 28%; /* Adjusted */
-    left: 50%; /* Adjusted */
-    width: 8px; /* Adjusted */
-    height: 165px; /* Adjusted */
+    top: 27%;
+    left: 45%;
+    width: 8px;
+    height: 165px;
     background-color: #555;
     border-radius: 4px;
     box-shadow: 0 0 2px rgba(0,0,0,.2);
-    transform-origin: 4px 120px; /* Adjusted */
-    animation: rotate-hour 43200s linear infinite;
+    transform-origin: 4px 120px;
+    animation: rotate-hour 86400s linear infinite; /* Full 24-hour cycle */
 }
 
 .clockminute {
-    position: absolute;
+    position: fixed;
     z-index: 3;
-    top: 21%; /* Adjusted */
-    left: 50%; /* Adjusted */
-    width: 8px; /* Adjusted */
-    height: 220px; /* Adjusted */
+    top: 16%;
+    left: 46%;
+    width: 8px;
+    height: 220px;
     background-color: #555;
     border-radius: 4px;
     box-shadow: 0 0 2px rgba(0,0,0,.2);
-    transform-origin: 4px 180px; /* Adjusted */
+    transform-origin: 4px 180px;
     animation: rotate-minute 3600s linear infinite;
 }
 
 .clocksecond {
-    position: absolute;
+    position: fixed;
     z-index: 4;
-    top: 12%; /* Adjusted */
-    left: 51%; /* Adjusted */
-    width: 4px; /* Adjusted */
-    height: 280px; /* Adjusted */
+    top: 7%;
+    left: 46%;
+    width: 4px;
+    height: 280px;
     background-color: red;
     box-shadow: 0 0 2px rgba(0,0,0,.2);
-    transform-origin: 2px 240px; /* Adjusted */
+    transform-origin: 2px 240px;
     animation: rotate-second 60s linear infinite;
 }
 
 .clocksecond:after {
     position: absolute;
     left: -5px;
-    bottom: 56px; /* Adjusted */
-    width: 32px; /* Adjusted */
-    height: 32px; /* Adjusted */
+    bottom: 56px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     box-shadow: 0 0 3px rgba(0,0,0,.2);
 }
@@ -142,11 +175,8 @@ html, body {
 .clockcenter {
     position: absolute;
     z-index: 1;
-    width: 45%;
-    height: 45%;
     top: 28%;
     left: 29%;
-    background-color: #b5d4e6;
     border-radius: 50%;
     box-shadow: inset 0 -1px 0 #fafafa, inset 0 1px 0 #e3e3e3;
 }
@@ -159,4 +189,138 @@ html, body {
     margin: 39%;
     background-color: #ddd;
     border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+
+/* iPads (768px to 1024px screen width) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .clockbox {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .clockhour {
+        width: 6px;
+        height: 145px;
+        top: 25%;
+        left: 47%;
+    }
+
+    .clockminute {
+        width: 6px;
+        height: 195px;
+        top: 12%;
+        left: 49%;
+    }
+
+    .clocksecond {
+        width: 3px;
+        height: 250px;
+        top: 0%;
+        left: 48%;
+    }
+
+    .timeindicator div {
+        margin: 220px 220px;
+    }
+}
+
+/* Mobile Phones (less than 768px screen width) */
+@media only screen and (max-width: 768px) {
+    .clockbox {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .clockhour {
+        width: 5px;
+        height: 115px;
+        top: 10%;
+        left: 35%;
+    }
+
+    .clockminute {
+        width: 5px;
+        height: 165px;
+        top: 4%;
+        left: 38%;
+    }
+
+    .clocksecond {
+        width: 2px;
+        height: 250px;
+        top: -11%;
+        left: 33%;
+    }
+
+    .timeindicator div {
+        margin: 180px 180px;
+    }
+}
+
+/* Small Phones (540px and less) */
+@media only screen and (max-width: 540px) {
+    .clockbox {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .clockhour {
+        width: 4px;
+        height: 122px;
+        top: 7%;
+        left: 36%;
+    }
+
+    .clockminute {
+        width: 4px;
+        height: 155px;
+        top: 1%;
+        left: 35%;
+    }
+
+    .clocksecond {
+        width: 2px;
+        height: 240px;
+        top: -16%;
+        left: 33%;
+    }
+
+    .timeindicator div {
+        margin: 150px 150px;
+    }
+}
+
+/* Extra Small Phones (400px and less) */
+@media only screen and (max-width: 400px) {
+    .clockbox {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .clockhour {
+        width: 3px;
+        height: 95px;
+        top: 0%;
+        left: 37%;
+    }
+
+    .clockminute {
+        width: 3px;
+        height: 120px;
+        top: -59%;
+        left: 13%;
+    }
+
+    .clocksecond {
+        width: 2px;
+        height: 180px;
+        top: -30%;
+        left: 18%;
+    }
+
+    .timeindicator div {
+        margin: 120px 120px;
+    }
 }
