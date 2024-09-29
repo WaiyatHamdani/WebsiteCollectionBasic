@@ -358,37 +358,7 @@ html, body {
     }
 }
 
-/* Extra Small Phones (400px and less) */
-@media only screen and (max-width: 400px) {
-    .clockbox {
-        width: 90vw;
-        height: 90vw;
-    }
 
-    .clockhour {
-        width: 3px;
-        height: 95px;
-        top: 0%;
-        left: 37%;
-    }
-
-    .clockminute {
-        width: 3px;
-        height: 120px;
-        top: -59%;
-        left: 13%;
-    }
-
-    .clocksecond {
-        width: 2px;
-        height: 180px;
-        top: -30%;
-        left: 18%;
-    }
-
-    .timeindicator div {
-        margin: 120px 120px;
-    }
 
     /*other media*/
     @media only screen and (min-width: 1101px) and (max-width: 1300px) {
@@ -422,4 +392,39 @@ html, body {
             margin: 220px 220px;
         }
     }
+
+
+        /* Z Fold galaxy media */
+    @media only screen and (min-width: 344px) and (max-width: 478px) {
+        
+        .clockbox {
+            width: 65vw; 
+            height: 65vw; 
+        }
+
+        .clockhour {
+            width: 6px;
+            height: 105px;
+            top: 6%;
+            left: 66%;
+        }
+
+        .clockminute {
+            width: 6px;
+            height: 164px;
+            top: -21%;
+            left: 66%;
+        }
+
+        .clocksecond {
+            width: 2px;
+            height: 226px;
+            top: -46%;
+            left: 66%;
+        }
+
+        .timeindicator div {
+            margin: 150px 150px;
+        }
+
 }
