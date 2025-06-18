@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aespa Members</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dirty Work</h1>
+  </header>
+
+  <nav class="member-nav">
+    <button data-member="winter" class="active">Winter</button>
+    <button data-member="karina">Karina</button>
+    <button data-member="giselle">Giselle</button>
+    <button data-member="ningning">Ningning</button>
+  </nav>
+
+  <main>
+    <section class="member-info active" id="winter">
+      <img src="images/winter.jpg" alt="Winter">
+      <div class="info">
+        <h2>Winter</h2>
+        <p>Winter is the lead vocalist and dancer of Aespa, known for her stunning visuals and strong performance. Also Certified Threat if you test her</p>
+      </div>
+    </section>
+
+    <section class="member-info" id="karina">
+      <img src="images/karina.jpg" alt="Karina">
+      <div class="info">
+        <h2>Karina</h2>
+        <p>Karina is the leader of Aespa, admired for her charisma and futuristic visuals.</p>
+      </div>
+    </section>
+
+    <section class="member-info" id="giselle">
+      <img src="images/giselle.jpg" alt="Giselle">
+      <div class="info">
+        <h2>Giselle</h2>
+        <p>Giselle is Aespa’s rapper with a strong stage presence and fluency in multiple languages.</p>
+      </div>
+    </section>
+
+    <section class="member-info" id="ningning">
+      <img src="images/ningning.jpg" alt="Ningning">
+      <div class="info">
+        <h2>Ningning</h2>
+        <p>Ningning is Aespa’s powerhouse vocalist with an impressive range and confident style.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('nav button');
+    const sections = document.querySelectorAll('.member-info');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        sections.forEach(sec => {
+          sec.classList.remove('active');
+        });
+
+        const selected = document.getElementById(btn.dataset.member);
+        selected.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

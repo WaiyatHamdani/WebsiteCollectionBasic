@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-image: url('images/dirty-work-bg.jpg'); 
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place it behind content */
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+  
+  .member-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .member-nav button {
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .member-nav button.active,
+  .member-nav button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .member-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .member-info.active {
+    display: flex;
+  }
+  
+  .member-info img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+  
+  .info {
+    max-width: 500px;
+    padding: 0 20px;
+  }
+  
